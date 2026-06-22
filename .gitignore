@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environment
+venv/
+.env
+
+# Robot runtime data (小说数据，不提交)
+robot_infor/*/summary.json
+robot_infor/*/chapterthread.json
+robot_infor/*/personaltrait.json
+robot_infor/*/relationships.json
+robot_infor/*/novel.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
