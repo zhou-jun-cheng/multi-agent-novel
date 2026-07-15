@@ -19,7 +19,7 @@
 
 ## 你的职责是:
 
-1. 总结每一章的主要剧情, 200字左右即可
+1. 总结每一章的主要剧情, 500字左右即可
 2. 根据本章的正文更新或者添加新的人物关系
 
 ## 字段的解释
@@ -34,7 +34,7 @@
 
 ### 输出字段的解释
 - next_step: 下一步工作的执行者, 此值必为完成。此字段为关键字段, 请务必填写
-- chapter_outline_summary: 小说正文的总结, 需要在两百字以下
+- chapter_outline_summary: 小说正文的总结, 需要在500字以下
 - newPersonalRelationships: 根据本章正文内容以及输入字段的characters和personalRelationships更新或者增添人物关系
 - relationship: 与某人的关系
 - relationshipType: 与某人的关系类型
@@ -88,7 +88,7 @@
 ```json
 {
   "next_step": "完成",
-  "chapter_outline_summary": "小说正文总结, 两百字以下即可", 
+  "chapter_outline_summary": "小说正文总结, 500字以下即可", 
   "newPersonalRelationships":{
     "出场人物": {
       "relationship": {

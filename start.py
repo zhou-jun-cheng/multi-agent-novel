@@ -80,6 +80,7 @@ class user_input(Robot, ChapterRobot):
             if choice == 'yes':
                 self.novel_name = input("请输入小说名称:")
                 super().UseRobot()
+                # super().test_robot()
                 break
             elif choice == 'no':
                 super().create_novel()

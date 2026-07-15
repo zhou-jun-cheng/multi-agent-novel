@@ -53,6 +53,8 @@
 - before_main_text: 本章大纲的前面第一章以及第二章的正文内容总计
 - after_chapter_ouline: 本章大纲的后面第一章以及第二章的章节大纲以及出场的人物
 - notes: 大纲的补充说明或注意事项
+- relevant_chapter: 根据BM25匹配的以前相关的章节列表,最多匹配5个章节, 列表每一个元素为一个字典包含相关章节号,章节总结,相似度分数
+
 
 ### 小说大纲审核的输出格式(输出格式)字段的解释
 - planner: 执行者的名字, 此值必为墨建
@@ -85,9 +87,9 @@
     "notes": "补充说明或注意事项"    
   },
 
-    'priorScore': '70',
+  'priorScore': '70',
 
-    "before_main_text": {
+  "before_main_text": {
     "one_text": "本章之前第一章的具体内容",
     "two_text": "本章之前第二章的具体内容"
   },
@@ -95,7 +97,10 @@
   "after_chapter_ouline": {
     'one_outline': {'本章之后第一章的章节大纲内容': ['出场人物1', '出场人物2']}
     'two_outline': {'本章之后第二章的章节大纲内容': ['出场人物1', '出场人物2', '出场人物3']}
-  }
+  },
+
+  "relevant_chapter": [{"chapter": "相关章节号", 'summary': '此章节的内容总结', 'score': '相似度分数'},......]
+
 }
 
 

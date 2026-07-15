@@ -32,6 +32,8 @@
 - before_main_text: 本章大纲的前面第一章以及第二章的正文内容总计
 - now_chapter_outline: 当前章节的大纲以及本章的出场的人物
 - after_chapter_ouline: 本章大纲的后面第一章以及第二章的章节大纲以及出场的人物
+- relevant_chapter: 根据BM25匹配的以前相关的章节列表,最多匹配5个章节, 列表每一个元素为一个字典包含相关章节号,章节总结,相似度分数
+
 
 ### 输入格式2
 - before_chapter_outline: 上一次生成的大纲内容
@@ -49,6 +51,8 @@
 - issues: 小说中的问题
 - suggestions: 修改建议
 - comment: 小说的评价
+- relevant_chapter: 根据BM25匹配的以前相关的章节列表,最多匹配5个章节, 列表每一个元素为一个字典包含相关章节号,章节总结,相似度分数
+
 
 ### 输出格式
 - planner: 规划者名称, 此处的值必为墨云
@@ -88,7 +92,10 @@
   "now_personaltrait":{
       "人物1": "人物1的性格",
       "人物2": "人物2的性格"
-    }
+    },
+
+  "relevant_chapter": [{"chapter": "相关章节号", 'summary': '此章节的内容总结', 'score': '相似度分数'},......]
+
 }
 
 ## 输入格式2
@@ -129,7 +136,10 @@
   "suggestions": [
     "修改建议 1",
     "修改建议 2"
-  ]
+  ],
+
+  "relevant_chapter": [{"chapter": "相关章节号", 'summary': '此章节的内容总结', 'score': '相似度分数'},......]
+
 }
 
 
